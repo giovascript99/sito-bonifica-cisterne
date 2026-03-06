@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonifica Cisterne Gasolio | Interventi Professionali e Certificati</title>
+    <meta name="description"
+        content="Specialisti in bonifica, pulizia e prova tenuta cisterne gasolio. Interventi certificati Gas-Free in 24h. Rispetto normativa CER. Richiedi un preventivo gratuito!">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tuosito.netlify.app/">
+    <meta property="og:title" content="Bonifica Cisterne Gasolio: Sicurezza e Certificazione">
+    <meta property="og:description"
+        content="Interventi professionali di pulizia e bonifica cisterne. Certificati a norma di legge.">
+    <meta property="og:image" content="https://tuosito.netlify.app/img/og-image.jpg">
+    <link rel="canonical" href="https://tuosito.netlify.app/">
+    <!-- Schema.org FAQ per SEO -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Ogni quanto va fatta la bonifica della cisterna?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "La normativa consiglia una verifica e pulizia ogni 5-10 anni per prevenire corrosioni e depositi che possono danneggiare la caldaia o causare perdite ambientali."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Quanto tempo dura l'intervento di bonifica?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Un intervento standard per una cisterna domestica richiede solitamente dalle 4 alle 6 ore, inclusa la fase di aspirazione e il rilascio della documentazione."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Cosa succede al gasolio residuo durante la pulizia?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Il gasolio ancora utilizzabile può essere travasato temporaneamente e filtrato, mentre i residui fangosi vengono smaltiti come rifiuto speciale certificato (CER)."
+    }
+  }]
+}
+</script>
+
+    <!-- Schema.org LocalBusiness per Google Maps -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Bonifica Cisterne [Nome Azienda]",
+  "image": "https://tuosito.netlify.app",
+  "telephone": "+393331234567",
+  "email": "info@bonificacisterne.it",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via delle Industrie 10",
+    "addressLocality": "Roma",
+    "postalCode": "00100",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.9028,
+    "longitude": 12.4964
+  },
+  "url": "https://tuosito.netlify.app",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "08:00",
+    "closes": "18:00"
+  }
+}
+</script>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> -->
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link al CSS che creeremo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container-fluid">
+
+            <a class="navbar-brand logo" href="#">
+                BONIFICA<span class="text-primary-custom">CISTERNE</span>
+            </a>
+
+            <button class="navbar-toggler custom-toggler collapsed border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#chi-siamo">Chi siamo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dove-siamo">Dove siamo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servizi">Servizi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#processo">Il Metodo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 w-100-mobile">
+                        <a class="nav-link nav-btn-cta px-lg-4" href="#contatti">
+                            <i class="fa-solid fa-file-invoice me-2 d-lg-none"></i>Chiedi Preventivo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center text-white">
+                    <div class="hero-badge-container mb-4">
+                        <span
+                            class="badge rounded-pill bg-warning text-dark px-4 py-2 fw-bold text-uppercase shadow-sm">
+                            <i class="fa-solid fa-certificate me-2"></i>Certificazione Gas-Free Inclusa
+                        </span>
+                    </div>
+
+                    <h1 class="display-3 fw-bold mb-3">
+                        Bonifica Cisterne Gasolio <br>
+                        <span class="text-highlight-premium">Sicura e Certificata</span>
+                    </h1>
+
+                    <p class="lead mb-5 mx-auto w-lg-75 opacity-90 hero-subtitle">
+                        Interventi rapidi in <strong>24 ore</strong> per privati, condomini e aziende.
+                        Ripristiniamo l'efficienza del tuo impianto eliminando residui e fanghi, garantendo il pieno
+                        rispetto delle normative ambientali.
+                    </p>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mb-5">
+                        <a href="tel:+393469667411" class="btn btn-cta-main btn-lg shadow-lg">
+                            <i class="fa-solid fa-phone-volume me-2"></i>Chiama Ora: +39 3469667411
+                        </a>
+                        <a href="#contatti" class="btn btn-cta-light btn-lg">
+                            <i class="fa-solid fa-file-invoice me-2"></i>Richiedi Preventivo
+                        </a>
+                    </div>
+
+                    <div class="hero-trust-bar d-flex justify-content-center flex-wrap gap-3 gap-md-5 ">
+                        <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Pronto Intervento</div>
+                        <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Normativa CER</div>
+                        <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Smaltimento Tracciato</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sezione About Us -->
+    <section id="chi-siamo" class="about-section py-5">
+        <div class="container py-lg-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="section-tag mb-2">L'Eccellenza nella Bonifica</div>
+                    <h2 class="display-5 fw-bold mb-4">Professionalità al servizio della tua <span
+                            class="text-primary-custom">Sicurezza</span></h2>
+
+                    <p class="lead mb-4">
+                        Siamo un'azienda specializzata nella <strong class="fw-bold">bonifica e pulizia di
+                            cisterne</strong> per aziende
+                        e privati, operando con rigore in tutta la <strong class="fw-bold">Lombardia</strong>.
+                    </p>
+
+                    <p class="text-muted mb-4">
+                        Eseguiamo interventi su cisterne interrate e fuori terra con procedure certificate e personale
+                        altamente specializzato. Dalla rimozione allo smaltimento dei residui (CER), garantiamo una
+                        gestione documentale completa per la tua massima tranquillità normativa.
+                    </p>
+
+                    <div class="row g-4 mt-2">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box-sm me-3">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </div>
+                                <span class="fw-bold">Copertura Lombardia</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box-sm me-3">
+                                    <i class="fa-solid fa-user-shield"></i>
+                                </div>
+                                <span class="fw-bold">Tecnici Certificati</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box-sm me-3">
+                                    <i class="fa-solid fa-file-contract"></i>
+                                </div>
+                                <span class="fw-bold">Pratiche Burocratiche</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box-sm me-3">
+                                    <i class="fa-solid fa-bolt-lightning"></i>
+                                </div>
+                                <span class="fw-bold">Interventi Rapidi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-image-wrapper position-relative">
+                        <div class="experience-badge shadow-lg">
+                            <span class="number">24h</span>
+                            <span class="text">Pronto<br>Intervento</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80&w=800"
+                            alt="Intervento Bonifica Cisterne" class="img-fluid rounded-5 shadow-lg">
+                        <div class="image-overlay-accent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Perchè sceglierci -->
+    <section id="perche-noi" class="py-5 bg-light">
+        <div class="container py-md-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold text-uppercase">Perché Scegliere i Nostri Tecnici</h2>
+                    <div class="header-line mx-auto"></div>
+                    <p class="text-muted mt-3">Oltre 20 anni di esperienza nel settore delle bonifiche ambientali,
+                        garantendo standard qualitativi d'eccellenza e pieno rispetto delle normative.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-box p-4 h-100 transition-up">
+                        <div class="feature-icon-circle mb-3">
+                            <i class="fa-solid fa-bolt-lightning"></i>
+                        </div>
+                        <h4 class="h5 fw-bold">Interventi H24</h4>
+                        <p class="small text-muted mb-0">Siamo operativi h24 per emergenze, garantendo l'arrivo sul
+                            posto entro poche ore dalla chiamata.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-box p-4 h-100 transition-up">
+                        <div class="feature-icon-circle mb-3">
+                            <i class="fa-solid fa-file-shield"></i>
+                        </div>
+                        <h4 class="h5 fw-bold">Certificazioni Legali</h4>
+                        <p class="small text-muted mb-0">Rilasciamo certificazione Gas-Free e formulari rifiuti (CER)
+                            validi a fini assicurativi e legali.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-box p-4 h-100 transition-up">
+                        <div class="feature-icon-circle mb-3">
+                            <i class="fa-solid fa-microscope"></i>
+                        </div>
+                        <h4 class="h5 fw-bold">Tecnologia Avanzata</h4>
+                        <p class="small text-muted mb-0">Utilizziamo sistemi di videoispezione e prove di tenuta
+                            elettroniche ad altissima precisione.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-box p-4 h-100 transition-up">
+                        <div class="feature-icon-circle mb-3">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                        </div>
+                        <h4 class="h5 fw-bold">Prezzi Trasparenti</h4>
+                        <p class="small text-muted mb-0">Nessuna sorpresa. Preventivi chiari, dettagliati e bloccati
+                            prima dell'inizio di ogni intervento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Dove siamo -->
+    <section id="dove-siamo" class="py-5 bg-white">
+        <div class="container py-lg-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="section-tag mb-2 text-primary fw-bold text-uppercase"
+                        style="letter-spacing: 2px; font-size: 0.8rem;">Copertura Territoriale</div>
+                    <h2 class="display-6 fw-bold mb-4">Operiamo in tutta la <span
+                            class="text-primary-custom">Lombardia</span></h2>
+                    <p class="text-muted mb-4">
+                        La nostra sede strategica ci permette di intervenire con massima rapidità nelle principali
+                        province lombarde. Garantiamo sopralluoghi gratuiti e tempi di risposta immediati per emergenze
+                        e manutenzioni.
+                    </p>
+
+                    <div class="province-grid row g-3">
+                        <div class="col-6">
+                            <div class="province-item d-flex align-items-center p-3 bg-white rounded-3 shadow-sm">
+                                <i class="fa-solid fa-location-dot text-primary me-2"></i>
+                                <span class="fw-bold">Lecco</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="province-item d-flex align-items-center p-3 bg-white rounded-3 shadow-sm">
+                                <i class="fa-solid fa-location-dot text-primary me-2"></i>
+                                <span class="fw-bold">Como</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="province-item d-flex align-items-center p-3 bg-white rounded-3 shadow-sm">
+                                <i class="fa-solid fa-location-dot text-primary me-2"></i>
+                                <span class="fw-bold">Milano</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="province-item d-flex align-items-center p-3 bg-white rounded-3 shadow-sm">
+                                <i class="fa-solid fa-location-dot text-primary me-2"></i>
+                                <span class="fw-bold">Monza</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="province-item d-flex align-items-center p-3 bg-white rounded-3 shadow-sm">
+                                <i class="fa-solid fa-location-dot text-primary me-2"></i>
+                                <span class="fw-bold">Bergamo</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="province-item d-flex align-items-center p-3 bg-white rounded-3 shadow-sm">
+                                <i class="fa-solid fa-location-dot text-primary me-2"></i>
+                                <span class="fw-bold">Sondrio</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 p-4 bg-primary-custom text-white rounded-4 shadow-lg">
+                        <h5 class="mb-2"><i class="fa-solid fa-truck-fast me-2"></i> Pronto Intervento</h5>
+                        <p class="small mb-0 opacity-75">Siamo attrezzati per raggiungere anche le zone montane della
+                            Valtellina e le aree urbane del milanese con mezzi dedicati.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 ps-lg-5" data-aos="zoom-in">
+                    <div class="map-visual-container position-relative">
+                        <img src="./img/furgone-azienda.webp" alt="Copertura servizio Lombardia"
+                            class="img-fluid rounded-5 shadow-lg">
+
+                        <div
+                            class="map-floating-card d-none d-md-block shadow-lg p-3 bg-white rounded-4 animate-bounce">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="pulse-red"></div>
+                                <div>
+                                    <p class="mb-0 fw-bold small text-dark">Sopralluoghi Attivi ora</p>
+                                    <p class="mb-0 tiny text-muted">Provincia di Monza e Brianza</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Servizi -->
+    <section id="servizi" class="py-5 bg-light">
+        <div class="container py-lg-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold text-uppercase">I Nostri Servizi Specializzati</h2>
+                    <div class="header-line mx-auto"></div>
+                    <p class="text-muted mt-3">Soluzioni professionali per la manutenzione e la sicurezza dei tuoi
+                        impianti di stoccaggio carburante.</p>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+                <div class="box-servizi col-md-5 mb-5">
+                    <div class="card h-100 service-card border-0 shadow-sm p-4">
+                        <div class="service-icon-wrapper mb-4">
+                            <i class="fa-solid fa-droplet-slash"></i>
+                        </div>
+                        <h3 class="h5 fw-bold">BONIFICA CISTERNE GASOLIO E NAFTA INTERRATE E FUORI TERRA</h3>
+                        <p class="text-muted small">Pulizia completa della cisterna, rimozione residui, inertizzazione e
+                            smaltimento dei rifiuti secondo normativa.</p>
+                        <div class="mt-auto pt-3">
+                            <a href="#contatti" class="service-link text-primary fw-bold small text-decoration-none">
+                                Richiedi info <i class="fa-solid fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-servizi col-md-5 mb-5">
+                    <div class="card h-100 service-card border-0 shadow-sm p-4">
+                        <div class="service-icon-wrapper mb-4">
+                            <i class="fa-solid fa-truck-pickup"></i>
+                        </div>
+                        <h3 class="h5 fw-bold">RIMOZIONE E SMALTIMENTO DI SERBATOI FUORI TERRA</h3>
+                        <p class="text-muted small">Possibilità di rimozione del serbatoio fuori terra post bonifica.
+                        </p>
+                        <div class="mt-auto pt-3">
+                            <a href="#contatti" class="service-link text-primary fw-bold small text-decoration-none">
+                                Richiedi info <i class="fa-solid fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-servizi col-md-5 mb-5 mb-md-0">
+                    <div class="card h-100 service-card border-0 shadow-sm p-4">
+                        <div class="service-icon-wrapper mb-4">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <h3 class="h5 fw-bold">CONTROLLO PERDITE E PROVA DI TENUTA</h3>
+                        <p class="text-muted small">Controllo tenuta, verifiche e manutenzione periodica per evitare
+                            contaminazioni.</p>
+                        <div class="mt-auto pt-3">
+                            <a href="#contatti" class="service-link text-primary fw-bold small text-decoration-none">
+                                Richiedi info <i class="fa-solid fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-servizi col-md-5">
+                    <div class="card h-100 service-card border-0 shadow-sm p-4">
+                        <div class="service-icon-wrapper mb-4">
+                            <i class="fa-solid fa-fill-drip"></i>
+                        </div>
+                        <h3 class="h5 fw-bold">RIEMPIMENTO CISTERNE INTERRATE</h3>
+                        <p class="text-muted small">Possibilità di riempimento con materiale inerte ove non sia
+                            possibile la rimozione.</p>
+                        <div class="mt-auto pt-3">
+                            <a href="#contatti" class="service-link text-primary fw-bold small text-decoration-none">
+                                Richiedi info <i class="fa-solid fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Timeline Intervento -->
+    <section id="processo" class="py-5  bg-light">
+        <div class="container py-lg-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold text-uppercase">Il Nostro Metodo Operativo</h2>
+                    <div class="header-line mx-auto"></div>
+                    <p class="text-muted mt-3">Un protocollo rigoroso per garantire la massima sicurezza e il rispetto
+                        delle normative ambientali in ogni fase.</p>
+                </div>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot">1</div>
+                    <div class="timeline-card shadow-sm">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fa-solid fa-microscope text-primary me-3 fs-4"></i>
+                            <h3 class="h5 fw-bold mb-0">Ispezione e Aspirazione</h3>
+                        </div>
+                        <p class="text-muted small mb-0">Verifichiamo analiticamente lo stato della cisterna e
+                            procediamo all'aspirazione pneumatica dei fanghi e dei residui sedimentati sul fondo.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">2</div>
+                    <div class="timeline-card shadow-sm">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fa-solid fa-faucet-drip text-primary me-3 fs-4"></i>
+                            <h3 class="h5 fw-bold mb-0">Bonifica e Lavaggio</h3>
+                        </div>
+                        <p class="text-muted small mb-0">Eseguiamo il lavaggio idrodinamico ad alta pressione (200 bar)
+                            delle pareti interne con detergenti sgrassanti biodegradabili certificati.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">3</div>
+                    <div class="timeline-card shadow-sm">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fa-solid fa-mask-ventilator text-primary me-3 fs-4"></i>
+                            <h3 class="h5 fw-bold mb-0">Verifica Gas-Free</h3>
+                        </div>
+                        <p class="text-muted small mb-0">Monitoriamo l'atmosfera interna con esplosimetri tarati per
+                            garantire l'assenza di vapori infiammabili, rilasciando la relativa certificazione.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">4</div>
+                    <div class="timeline-card shadow-sm">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fa-solid fa-file-signature text-primary me-3 fs-4"></i>
+                            <h3 class="h5 fw-bold mb-0">Certificazione Finale</h3>
+                        </div>
+                        <p class="text-muted small mb-0">Consegniamo il dossier tecnico completo: certificato di
+                            avvenuta bonifica, prova di tenuta e formulari rifiuti (FIR) per lo smaltimento a norma.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Recensioni e Trust bar -->
+    <section id="social-proof" class="py-5 bg-white overflow-hidden">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <p class="text-uppercase small fw-bold text-muted mb-4">Azienda Autorizzata e Certificata</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-5 filter-grayscale">
+                        <div class="trust-logo">ALBO GESTORI</div>
+                        <div class="trust-logo">ISO 9001</div>
+                        <div class="trust-logo">GAS FREE</div>
+                        <div class="trust-logo">CER COMPLIANT</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold text-uppercase">La fiducia dei nostri clienti</h2>
+                    <div class="header-line mx-auto"></div>
+                </div>
+            </div>
+
+            <div class="swiper review-swiper pb-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-card p-4 bg-white shadow-sm h-100">
+                            <div class="stars mb-3 text-warning">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text italic text-muted">"Intervento rapidissimo per il mio condominio.
+                                Hanno lasciato tutto pulito e rilasciato subito la documentazione legale. Consigliati!"
+                            </p>
+                            <div class="client-info d-flex align-items-center mt-4">
+                                <div class="client-init">RG</div>
+                                <div class="ms-3 text-start">
+                                    <h6 class="mb-0 fw-bold">Roberto G.</h6>
+                                    <small class="text-primary fw-bold">Amministratore</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card p-4 bg-white shadow-sm h-100">
+                            <div class="stars mb-3 text-warning">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text italic text-muted">"Intervento rapidissimo per il mio condominio.
+                                Hanno lasciato tutto pulito e rilasciato subito la documentazione legale. Consigliati!"
+                            </p>
+                            <div class="client-info d-flex align-items-center mt-4">
+                                <div class="client-init">RG</div>
+                                <div class="ms-3 text-start">
+                                    <h6 class="mb-0 fw-bold">Roberto G.</h6>
+                                    <small class="text-primary fw-bold">Amministratore</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card p-4 bg-white shadow-sm h-100">
+                            <div class="stars mb-3 text-warning">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text italic text-muted">"Professionisti seri. La prova di tenuta sulla mia
+                                vecchia cisterna è stata accurata. Mi hanno evitato un potenziale danno ambientale."</p>
+                            <div class="client-info d-flex align-items-center mt-4">
+                                <div class="client-init">ML</div>
+                                <div class="ms-3 text-start">
+                                    <h6 class="mb-0 fw-bold">Marco L.</h6>
+                                    <small class="text-primary fw-bold">Proprietario</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card p-4 bg-white shadow-sm h-100">
+                            <div class="stars mb-3 text-warning">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text italic text-muted">"Ottimo servizio di aspirazione fanghi. Prezzo
+                                esattamente come da preventivo, nessuna sorpresa. Molto cordiali."</p>
+                            <div class="client-info d-flex align-items-center mt-4">
+                                <div class="client-init">SF</div>
+                                <div class="ms-3 text-start">
+                                    <h6 class="mb-0 fw-bold">Stefania F.</h6>
+                                    <small class="text-primary fw-bold">Azienda Agricola</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Accordion FAQs -->
+    <section id="faq" class="py-5  bg-light">
+        <div class="container py-lg-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold text-uppercase">Domande Frequenti</h2>
+                    <div class="header-line mx-auto"></div>
+                    <p class="text-muted mt-3">Tutto quello che devi sapere sulla manutenzione e la sicurezza della tua
+                        cisterna di gasolio.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="accordion custom-faq" id="accordionFAQ">
+
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    <span class="faq-number me-3">01</span> Ogni quanto va fatta la bonifica della
+                                    cisterna?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    <p class="mb-0">La normativa e la buona tecnica consigliano una verifica e pulizia
+                                        <strong>ogni 5-10 anni</strong>. Questo previene la corrosione delle pareti e
+                                        l'accumulo di fanghi che possono bloccare i filtri della caldaia o causare gravi
+                                        perdite ambientali.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    <span class="faq-number me-3">02</span> È possibile recuperare il gasolio rimasto?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Assolutamente sì. Durante l'intervento, il gasolio pulito viene
+                                        aspirato e stoccato temporaneamente. Dopo la pulizia, il combustibile viene
+                                        <strong>filtrato e reinserito</strong>, riducendo al minimo gli sprechi per il
+                                        cliente.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    <span class="faq-number me-3">03</span> Rilasciate documentazione valida per la
+                                    legge?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Sì, rilasciamo il <strong>certificato di avvenuta bonifica</strong>
+                                        e il certificato "Gas-Free". Inoltre, gestiamo lo smaltimento dei fanghi tramite
+                                        formulario FIR, sollevandoti da ogni responsabilità civile e penale.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione CTA parallax -->
+    <section id="cta-finale" class="cta-background-section text-center text-white py-5">
+        <div class="cta-bg-image"></div>
+        <div class="dark-overlay"></div>
+
+        <div class="container position-relative py-5" data-aos="zoom-in">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3">Non rischiare sanzioni o perdite.</h2>
+                    <p class="lead mb-5 opacity-90">Affidati a specialisti certificati per la bonifica della tua
+                        cisterna in Lombardia.</p>
+
+                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                        <a href="tel:+393469667411" class="btn btn-warning btn-lg px-5 py-3 fw-bold text-uppercase">
+                            <i class="fa-solid fa-phone me-2"></i>Chiama Ora
+                        </a>
+                        <a href="#contatti" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold text-uppercase">
+                            Richiedi Preventivo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Contatti -->
+    <section id="contatti" class="py-5 bg-light-subtle">
+        <div class="container py-lg-5">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="pe-lg-4">
+                        <h2 class="fw-bold text-uppercase mb-4 text-center">Parla con un nostro <span
+                                class="text-primary">tecnico
+                                esperto</span></h2>
+                        <p class="text-muted mb-5">Ricevi una consulenza tecnica gratuita e un preventivo dettagliato
+                            entro 24 ore lavorative. Nessun costo nascosto, massima trasparenza.</p>
+
+                        <div class="contact-methods mb-5">
+                            <div
+                                class="contact-method-item d-flex align-items-center p-3 mb-3 shadow-sm bg-white rounded-4">
+                                <div class="contact-icon-box me-3">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block small fw-bold text-uppercase">Assistenza
+                                        Rapida</small>
+                                    <a href="tel:+393469667411"
+                                        class="h5 fw-bold text-dark text-decoration-none contact-info">+39
+                                        3469667411</a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="contact-method-item d-flex align-items-center p-3 mb-3 shadow-sm bg-white rounded-4">
+                                <div class="contact-icon-box me-3">
+                                    <i class="fa-solid fa-envelope-open-text"></i>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block small fw-bold text-uppercase">Email Diretta</small>
+                                    <a href="mailto:ale98ganino@gmail.com?subject=Richiesta Informazioni Bonifica Cisterne"
+                                        class="h5 fw-bold text-dark text-decoration-none contact-info">
+                                        ale98ganino@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trust-info p-4 border-start border-primary border-4 bg-white shadow-sm rounded-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-user-shield text-primary me-2"></i>
+                                <span class="fw-bold small text-uppercase">Privacy Garantita</span>
+                            </div>
+                            <p class="small text-muted mb-0">I tuoi dati sono trattati con protocollo sicuro SSL nel
+                                pieno rispetto del GDPR. Non riceverai mai spam.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="form-container bg-white shadow-lg p-4 p-md-5 rounded-5 border border-light">
+                        <form name="contatti-bonifica" method="POST" data-netlify="true" action="/grazie.html"
+                            data-netlify-honeypot="bot-field" netlify>
+                            <input type="hidden" name="form-name" value="contatti-bonifica" />
+                            <p class="d-none">
+                                <label>Non compilare: <input name="bot-field" /></label>
+                            </p>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">Nome e Cognome *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-0"><i
+                                                class="fa-solid fa-user text-primary"></i></span>
+                                        <input type="text" name="name" class="form-control"
+                                            placeholder="Es. Mario Rossi" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">Telefono *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-0"><i
+                                                class="fa-solid fa-phone text-primary"></i></span>
+                                        <input type="tel" name="phone" class="form-control"
+                                            placeholder="Es. 333 123 4567" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label-custom">Email *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-0"><i
+                                                class="fa-solid fa-envelope text-primary"></i></span>
+                                        <input type="email" name="email" class="form-control"
+                                            placeholder="mario@esempio.it" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label-custom">Tipo di Intervento</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-0"><i
+                                                class="fa-solid fa-gears text-primary"></i></span>
+                                        <select name="service_type" class="form-select custom-select">
+                                            <option value="bonifica">Bonifica Cisterne (Gasolio/Nafta)</option>
+                                            <option value="prova_tenuta">Rimozione e Smaltimento Serbatoi
+                                            </option>
+                                            <option value="smaltimento">Controllo Perdite e Prova Tenuta</option>
+                                            <option value="urgenza">Riempimento Cisterne Interrate</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label-custom">Dettagli della richiesta</label>
+                                    <textarea name="message" class="form-control" rows="4"
+                                        placeholder="Indica località e capacità della cisterna..."></textarea>
+                                </div>
+
+                                <div class="col-12 pt-2">
+                                    <button type="submit" class="btn btn-primary-custom w-100 py-3 shadow">
+                                        Invia Richiesta Gratuita <i class="fa-solid fa-paper-plane ms-2"></i>
+                                    </button>
+                                    <p class="text-center text-muted small mt-3 mb-0">
+                                        <i class="fa-solid fa-shield-check me-1 text-success"></i> I tuoi dati sono al
+                                        sicuro e trattati secondo GDPR.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container mt-lg-3">
+            <div class="row g-4 justify-content-between text-center text-md-start">
+
+                <div class="col-lg-4 col-md-12 text-center text-lg-start">
+                    <a class="navbar-brand logo footer-logo mb-3 d-inline-block" href="#">
+                        BONIFICA<span>CISTERNE</span>
+                    </a>
+                    <p class="text-secondary pe-lg-4">
+                        Leader in Italia nella manutenzione di impianti petroliferi. Interventi tecnologici,
+                        certificazioni Gas-Free e gestione rifiuti con protocolli di massima sicurezza ambientale.
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-4">
+                        <a href="#" class="social-circle-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-circle-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-circle-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 ps-lg-5">
+                    <h6 class="text-uppercase fw-bold mb-4 text-white letter-spacing-1">Azienda</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#chi-siamo">Chi siamo</a></li>
+                        <li><a href="#dove-siamo">Dove siamo</a></li>
+                        <li><a href="#servizi">Servizi</a></li>
+                        <li><a href="#processo">Il Metodo</a></li>
+                        <li><a href="#social-proof">Recensioni</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6 class="text-uppercase fw-bold mb-4 text-white letter-spacing-1">Soluzioni</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#servizi">Bonifica Cisterne</a></li>
+                        <li><a href="#servizi">Smaltimento serbatoi</a></li>
+                        <li><a href="#servizi">Prova di tenuta</a></li>
+                        <li><a href="#servizi">Riempimento cisterne interrate</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 text-center text-md-start">
+                    <h6 class="text-uppercase fw-bold mb-4 text-white letter-spacing-1">Contatti</h6>
+                    <div class="footer-contact-info">
+                        <p class="mb-3 d-flex align-items-start justify-content-center justify-content-md-start">
+                            <i class="fa-solid fa-location-dot text-primary mt-1 me-3"></i>
+                            <span class="text-secondary small">Via delle Industrie 10,<br>00100 Milano (MI)</span>
+                        </p>
+                        <p class="mb-3 d-flex align-items-center justify-content-center justify-content-md-start">
+                            <i class="fa-solid fa-phone text-primary me-3"></i>
+                            <a href="tel:+393469667411" class="text-secondary text-decoration-none small">+39
+                                3469667411</a>
+                        </p>
+                        <p class="mb-0 d-flex align-items-center justify-content-center justify-content-md-start">
+                            <i class="fa-solid fa-envelope text-primary me-3"></i>
+                            <a href="mailto:ale98ganino@gmail.com"
+                                class="text-secondary text-decoration-none small">ale98ganino@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5 border-secondary opacity-25">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0 text-secondary small">
+                        &copy; 2026 <strong>Bonifica Cisterne S.r.l.</strong> - Tutti i diritti riservati.
+                    </p>
+                    <p class="mb-0 text-secondary x-small mt-1">P.IVA 01234567890 | Capitale Sociale i.v. € 50.000</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-legal-links">
+                        <a href="#" class="text-secondary small me-3 text-decoration-none hover-white">Privacy
+                            Policy</a>
+                        <a href="#" class="text-secondary small me-3 text-decoration-none hover-white">Cookie Policy</a>
+                        <a href="#" class="text-secondary small text-decoration-none hover-white">Termini di
+                            Servizio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/393469667411" class="whatsapp-sticky" target="_blank" aria-label="Contattaci su WhatsApp">
+        <div class="whatsapp-pulse"></div>
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip-whatsapp">Parla con noi</span>
+    </a>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/f850baf9b6.js" crossorigin="anonymous"></script>
+    <!-- Swiper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Script.js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
