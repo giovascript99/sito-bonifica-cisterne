@@ -37,6 +37,10 @@ h3,
     letter-spacing: 0.5px;
 }
 
+.ls-2 {
+    letter-spacing: 2px;
+}
+
 /* Impedisce alla navbar fissa di coprire i titoli delle sezioni */
 section {
     scroll-margin-top: 55px;
@@ -194,8 +198,8 @@ section {
 /* Hero Section */
 .hero {
     min-height: 95vh;
-    background: linear-gradient(135deg, rgba(0, 45, 114, 0.9), rgba(0, 20, 50, 0.85)),
-        url('https://picsum.photos/1200') no-repeat center center/cover;
+    background: linear-gradient(135deg, rgba(0, 45, 114, 0.9), rgba(0, 20, 50, 0.5)),
+        url('./img/bg-hero.webp') no-repeat center center/cover;
     position: relative;
     overflow: hidden;
 }
@@ -415,23 +419,84 @@ section {
 .experience-badge {
     position: absolute;
     top: 40px;
-    left: 0;
-    background: var(--secondary);
-    color: #000;
-    padding: 15px 25px;
-    border-radius: 15px;
-    z-index: 3;
+    left: -15px;
+    /* Leggermente fuori bordo per dare profondità */
+    background: linear-gradient(135deg, #ffcc00 0%, #ffb300 100%);
     display: flex;
     align-items: center;
     gap: 15px;
-    font-weight: 800;
+    padding: 18px 25px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 10;
+    overflow: hidden;
+    /* Necessario per l'effetto shine */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.experience-badge .number {
-    font-size: 2rem;
-    line-height: 1;
-    border-right: 2px solid rgba(0, 0, 0, 0.1);
-    padding-right: 15px;
+/* Icona con contenitore scuro per contrasto */
+.badge-icon {
+    background: rgba(0, 0, 0, 0.1);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+/* Testo gerarchico */
+.badge-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: -2px;
+}
+
+.main-label {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #000;
+    line-height: 1.1;
+}
+
+/* Animazione di riflesso "Shine" */
+.shine-effect {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    transition: none;
+    animation: shine-loop 4s infinite;
+}
+
+@keyframes shine-loop {
+    0% {
+        left: -100%;
+    }
+
+    20% {
+        left: 150%;
+    }
+
+    100% {
+        left: 150%;
+    }
 }
 
 /* Responsive */
@@ -441,8 +506,29 @@ section {
     }
 
     .experience-badge {
-        top: 0;
-        padding: 10px 20px;
+        top: 20px;
+        left: 10px;
+        padding: 8px 15px;
+        gap: 10px;
+        border-radius: 12px;
+        max-width: 180px;
+    }
+
+    .badge-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+
+    .sub-label {
+        font-size: 0.6rem;
+        letter-spacing: 0.5px;
+    }
+
+    .main-label {
+        font-size: 0.85rem;
+        line-height: 1.2;
     }
 }
 
@@ -561,10 +647,9 @@ section {
     .map-floating-card {
         position: relative;
         left: 0;
-        bottom: 0;
-        margin-top: -50px;
-        margin-left: 20px;
-        width: calc(100% - 40px);
+        margin-left: 30px;
+
+        width: calc(100% - 70px);
     }
 
     .map-visual-container img {
@@ -913,27 +998,29 @@ section {
 }
 
 /* Sezione CTA parallax */
-.cta-background-section {
+.cta-section {
     position: relative;
-    overflow: hidden;
-    /* Fondamentale per non far uscire l'immagine */
+    padding: 120px 0;
     background-color: #000;
-    height: 70vh;
-    margin: 0;
+    /* Fallback */
+    overflow: hidden;
+    /* Fondamentale: taglia l'immagine che sporge */
 }
 
-.cta-bg-image {
+.cta-parallax-bg {
     position: absolute;
-    top: -50%;
-    /* Inizia un po' più in alto */
+    top: 0;
     left: 0;
     width: 100%;
-    height: 150%;
-    background-image: url('img/cta-bg.webp');
+    height: 153%;
+    /* Più alta per permettere il movimento */
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     z-index: 0;
     will-change: transform;
+    /* Ottimizza le prestazioni della GPU */
+    transform: translateY(-20%);
+    /* Posizione di partenza */
 }
 
 .dark-overlay {
@@ -942,12 +1029,20 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 32, 85, 0.5);
+    background: rgba(0, 20, 50, 0.7);
+    /* Blu scuro profondo */
     z-index: 1;
 }
 
-.cta-background-section .container {
+.cta-section .container {
     z-index: 2;
+}
+
+/* Su Mobile riduciamo l'altezza per evitare problemi di scroll */
+@media (max-width: 768px) {
+    .cta-parallax-bg {
+        height: 150%;
+    }
 }
 
 /* Sezione Contatti */

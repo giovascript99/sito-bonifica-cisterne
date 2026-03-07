@@ -54,20 +54,21 @@ const swiper = new Swiper('.review-swiper', {
 });
 
 // Sezione CTA Parallax
-window.addEventListener('scroll', function () {
-    const parallaxImage = document.querySelector('.cta-bg-image');
-    const container = document.querySelector('.cta-background-section');
+window.addEventListener('scroll', () => {
+    const section = document.querySelector('.cta-section');
+    const bg = document.querySelector('.cta-parallax-bg');
 
-    if (parallaxImage && container) {
-        const speed = 0.3; // Velocità del parallasse
-        const rect = container.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
+    if (section && bg) {
+        const speed = 0.2; // Aumenta questo valore per un effetto più accentuato (es. 0.5 o 0.6)
 
-        // Se la sezione è visibile nel viewport
-        if (rect.top < windowHeight && rect.bottom > 0) {
-            // Calcola quanto la sezione è "entrata" nella vista
-            const shift = (windowHeight - rect.top) * speed;
-            parallaxImage.style.transform = `translate3d(0, ${shift}px, 0)`;
+        // Calcoliamo la posizione della sezione rispetto alla finestra
+        const rect = section.getBoundingClientRect();
+        const scrollPosition = window.innerHeight - rect.top;
+
+        // Applichiamo il movimento solo se la sezione è visibile
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            const yPos = -(scrollPosition * speed);
+            bg.style.transform = `translate3d(0, ${yPos}px, 0)`;
         }
     }
 });
